@@ -9,7 +9,6 @@ import lombok.*;
 @Table(name = "country")
 @Data
 @NoArgsConstructor
-@EqualsAndHashCode(onlyExplicitlyIncluded = true)
 
 public class Country {
 	@Id

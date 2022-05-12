@@ -27,7 +27,7 @@ public class CountryController {
 		return countryRepository.findById(countryId).get();
 	}
 
-	@PutMapping(value = "/countries")
+	@PutMapping
 	public void updateCountry(@RequestBody Country country) {
 		countryRepository.save(country);
 	}
